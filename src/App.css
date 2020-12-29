@@ -1,0 +1,63 @@
+body {
+  font-family: Iransans;
+  background-color: #00b4d8;
+  color: white;
+}
+
+.infobox {
+  padding-left: 3em !important;
+}
+
+.bigtar {
+  font-size: 2em;
+}
+.bigtarrr{
+  font-size: 3em;
+}
+
+.bigtarr {
+  padding-top: 1em !important;
+  font-size: 5em;
+}
+
+.vasat {
+  text-align: center;
+}
+
+.nav-wrapper {
+  padding-left: 1em;
+  padding-right: 2em;
+  
+}
+
+.nav-wrapper a {
+ 
+  font-size: 40px !important;
+}
+
+.chip {
+  font-size: x-large;
+}
+
+.infow {
+  font-size: 2em;
+}
+
+textarea {
+  width: 500px;
+  height: 300px;
+  direction: rtl;
+  font-size: 2.5em;
+  margin-top: 0.7em;
+  background-color: white;
+  color: #00b4d8;
+}
+
+.gesclass {
+  font-size:3em;
+}
+
+.nav-wrapper, .page-footer {
+  background-color: #00b4d8;
+
+}
