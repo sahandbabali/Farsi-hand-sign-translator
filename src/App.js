@@ -17,6 +17,45 @@ var hand;
 var tempsign;
 var stringema = " ";
 
+const aa = new fp.GestureDescription("آ");
+oo.addCurl(fp.Finger.Thumb, fp.FingerCurl.NoCurl, 1.0);
+oo.addDirection(fp.Finger.Index, fp.FingerDirection.VerticalUp, 1.0);
+oo.addCurl(fp.Finger.Index, fp.FingerCurl.HalfCurl, 1.0);
+oo.addCurl(fp.Finger.Middle, fp.FingerCurl.HalfCurl, 1.0);
+oo.addCurl(fp.Finger.Ring, fp.FingerCurl.FullCurl, 1.0);
+oo.addCurl(fp.Finger.Pinky, fp.FingerCurl.FullCurl, 1.0);
+
+const ee = new fp.GestureDescription("ا");
+ee.addCurl(fp.Finger.Thumb, fp.FingerCurl.HalfCurl, 1.0);
+ee.addCurl(fp.Finger.Index, fp.FingerCurl.HalfCurl, 1.0);
+ee.addDirection(fp.Finger.Index, fp.FingerDirection.HorizontalLeft, 1.0);
+ee.addCurl(fp.Finger.Middle, fp.FingerCurl.HalfCurl, 1.0);
+ee.addDirection(fp.Finger.Middle, fp.FingerDirection.HorizontalLeft, 1.0);
+ee.addCurl(fp.Finger.Ring, fp.FingerCurl.HalfCurl, 1.0);
+ee.addCurl(fp.Finger.Pinky, fp.FingerCurl.HalfCurl, 1.0);
+
+const bb = new fp.GestureDescription("ب");
+bb.addCurl(fp.Finger.Index, fp.FingerCurl.NoCurl, 1.0);
+bb.addDirection(fp.Finger.Index, fp.FingerDirection.HorizontalLeft, 1.0);
+
+bb.addCurl(fp.Finger.Middle, fp.FingerCurl.HalfCurl, 1.0);
+bb.addDirection(fp.Finger.Middle, fp.FingerDirection.VerticalDown, 1.0);
+
+bb.addCurl(fp.Finger.Ring, fp.FingerCurl.FullCurl, 1.0);
+bb.addCurl(fp.Finger.Pinky, fp.FingerCurl.FullCurl, 1.0);
+
+const pp = new fp.GestureDescription("پ");
+pp.addCurl(fp.Finger.Index, fp.FingerCurl.NoCurl, 1.0);
+pp.addDirection(fp.Finger.Index, fp.FingerDirection.HorizontalLeft, 1.0);
+
+pp.addCurl(fp.Finger.Middle, fp.FingerCurl.HalfCurl, 1.0);
+pp.addDirection(fp.Finger.Middle, fp.FingerDirection.VerticalDown, 1.0);
+
+pp.addCurl(fp.Finger.Ring, fp.FingerCurl.HalfCurl, 1.0);
+pp.addDirection(fp.Finger.Middle, fp.FingerDirection.VerticalDown, 1.0);
+pp.addCurl(fp.Finger.Pinky, fp.FingerCurl.HalfCurl, 1.0);
+pp.addDirection(fp.Finger.Middle, fp.FingerDirection.VerticalDown, 1.0);
+
 const sin = new fp.GestureDescription("س");
 //sin.addCurl(fp.Finger.Thumb, fp.FingerCurl.NoCurl, 1.0);
 sin.addCurl(fp.Finger.Index, fp.FingerCurl.NoCurl, 1.0);
@@ -34,15 +73,7 @@ laam.addCurl(fp.Finger.Ring, fp.FingerCurl.FullCurl, 1.0);
 laam.addCurl(fp.Finger.Pinky, fp.FingerCurl.NoCurl, 1.0);
 laam.addDirection(fp.Finger.Index, fp.FingerDirection.VerticalUp, 1.0);
 
-const aa = new fp.GestureDescription("او");
-oo.addCurl(fp.Finger.Thumb, fp.FingerCurl.NoCurl, 1.0);
-oo.addDirection(fp.Finger.Index, fp.FingerDirection.VerticalUp, 1.0);
 
-oo.addCurl(fp.Finger.Index, fp.FingerCurl.HalfCurl, 1.0);
-oo.addCurl(fp.Finger.Middle, fp.FingerCurl.HalfCurl, 1.0);
-
-oo.addCurl(fp.Finger.Ring, fp.FingerCurl.FullCurl, 1.0);
-oo.addCurl(fp.Finger.Pinky, fp.FingerCurl.FullCurl, 1.0);
 
 const mim = new fp.GestureDescription("م");
 //mim.addCurl(fp.Finger.Thumb, fp.FingerCurl.FullCurl, 1.0);
@@ -155,6 +186,9 @@ function App() {
       // Gesture
       if (hand.length > 0) {
         const GE = new fp.GestureEstimator([
+          ee,
+          bb,
+          pp,
           sin,
           laam,
           aa,
