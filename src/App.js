@@ -34,7 +34,7 @@ laam.addCurl(fp.Finger.Ring, fp.FingerCurl.FullCurl, 1.0);
 laam.addCurl(fp.Finger.Pinky, fp.FingerCurl.NoCurl, 1.0);
 laam.addDirection(fp.Finger.Index, fp.FingerDirection.VerticalUp, 1.0);
 
-const oo = new fp.GestureDescription("او");
+const aa = new fp.GestureDescription("او");
 oo.addCurl(fp.Finger.Thumb, fp.FingerCurl.NoCurl, 1.0);
 oo.addDirection(fp.Finger.Index, fp.FingerDirection.VerticalUp, 1.0);
 
@@ -157,7 +157,7 @@ function App() {
         const GE = new fp.GestureEstimator([
           sin,
           laam,
-          oo,
+          aa,
           mim,
           ye,
           kaf,
